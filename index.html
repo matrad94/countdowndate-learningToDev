@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odliczacz</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
-    <h1>Odliczacz</h1>
-    <div id="container">
-        <form action="countdown">
-            <input type="time" name="Godzina" id="hour">
-            <input type="date" name="Data" id="date">
-            <button type="button" id="startcountdown">Odlicz</button>
-        </form>
+<body class="container">
+    <div class="row card-panel blue lighten-5">
+        <h1 class="col s12 center-align">Odliczacz</h1>
+        <div id="container" class="col s12">
+            <form action="countdown" class="col s12 center-align">
+                <div class="input-field col s12 center-align">
+                    <input type="text" placeholder="Etykieta" name="Etykieta" id="tag" class="center-align validate">
+                    <label for="tag" class="center-align">Etykieta</label>
+                </div>
+                <p>Godzina i data:</p>
+                <input type="time" name="Godzina" id="hour" class="center-align">
+                <input type="date" name="Data" id="date" class="datepicker center-align"><br><br>
+                <button type="button" id="startcountdown" class="waves-effect waves-light btn pulse">Rozpocznij odliczanie</button>
+            </form>
+        </div>
+        <h2 id="msg" class="center-align"></h2>
     </div>
-    <h2 id="textOdliczanie"></h2>
+     <div id="holder" class="row"></div>
+    
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
