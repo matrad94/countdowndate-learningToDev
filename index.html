@@ -16,7 +16,9 @@
 </head>
 <body class="container">
     <div class="row card-panel blue lighten-5">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Dostępne odliczenia</a>
         <h1 class="col s12 center-align">Odliczacz</h1>
+        <p class="center-align">Wpisz datę i godzinę, do kiedy chcesz odliczać czas. Opcjonalnie możesz temu odliczaniu przypisać etykietę.</p>
         <div id="container" class="col s12">
             <form action="countdown" class="col s12 center-align">
                 <div class="input-field col s12 center-align">
@@ -31,8 +33,29 @@
         </div>
         <h2 id="msg" class="center-align"></h2>
     </div>
-     <div id="holder" class="row"></div>
-    
+    <div id="holder" class="row"></div>
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content container row">
+            <div class="card col s4">
+                <h5>Nowy rok 2021</h5>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Odlicz
+                    <i id="nowyrok" class="material-icons right">send</i>
+                </button>
+            </div>
+            <div class="card col s4">
+                <h5>Święta Bożego Narodzenia</h5>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Odlicz
+                    <i id="bozenarodzenie" class="material-icons right">send</i>
+                </button>
+            </div>
+            <div class="card col s4">
+                <h5>Dzień programisty</h5>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Odlicz
+                    <i id="dzienprogramisty" class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
